@@ -51,8 +51,9 @@ do
             cout << "EQUIPO: UTN" << endl << endl;
             cout << "INTEGRANTES: " << endl << endl;
             cout << "SARMIENTO, FRANCO. LEGAJO: XXXXX. " << endl;
-            cout << "XXXXXXX. LEGAJO: XXXXXXX. " << endl;
-            cout << "XXXXXXX. LEGAJO: XXXXXX. " << endl << endl;
+            cout << "JOEL, XXXXX. LEGAJO: XXXXXXX. " << endl;
+            cout << "JONATAN, XXXXX. LEGAJO: XXXXXX. " << endl;
+            cout << "SIMON, XXXXX. LEGAJO: XXXXXX. " << endl << endl;
             cout << "-------------------------------" << endl;
             cout << "DESEA VOLVER AL MENU PRINCIPAL? " << endl << "1 - SI. 0 - NO. " << endl;
             cin >> boton;
