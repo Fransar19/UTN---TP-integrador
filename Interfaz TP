@@ -1,0 +1,67 @@
+#include <iostream>
+#include <cstdlib> /// srand, rand (PARA NUMEROS ALEATORIOS)
+#include <ctime> /// time (INICIALIZA DESDE CUALQUIER NUMERO PARA VARIAR)
+#include <string.h>
+using namespace std;
+
+int main(){
+    int opcion, boton;
+    char jugadorSolitario[30];
+    char jugador1[30];
+    char jugador2[30];
+do
+
+    {
+        cout << "GREED" << endl << "-------------------------------" << endl;
+        cout << "1 - MODO UN JUGADOR" << endl << "2 - MODO DOS JUGADORES" << endl << "3 - ESTADISTICAS" << endl << "4 - CREDITOS" << endl;
+        cout << "-------------------------------" << endl << "0 - SALIR" << endl << endl;
+        cout << "SELECCIONE UNA OPCION: ";
+        cin >> opcion;
+        cin.ignore(30,'\n');
+        system("cls");  // Limpia la pantalla
+
+        /// INGRESO DE NOMBRES
+
+        switch (opcion)
+        {
+        case 1:
+            cout << "INGRESE EL NOMBRE DEL UNICO JUGADOR: ";
+            cin.getline(jugadorSolitario,30);
+            cout << endl;
+            boton=0;
+            break;
+        case 2:
+            cout << "INGRESE EL NOMBRE DEL JUGADOR NUMERO 1: ";
+            cin.getline(jugador1,30);
+            cout << "INGRESE EL NOMBRE DEL JUGADOR NUMERO 2: ";
+            cin.getline(jugador2,30);
+            cout << endl;
+            boton=0;
+            break;
+        case 3:
+            cout << "-------------------------------" << endl;
+            cout << "JUGADOR CON MAYOR CANTIDAD DE PUNTOS: " << endl; ///poner el jug con may puntos << endl;
+            cout << "PUNTAJE MAS ALTO: " << endl; ///poner puntos del mas alto << endl;
+            cout << "-------------------------------" << endl;
+            cout << "DESEA VOLVER AL MENU PRINCIPAL? " << endl  << "1 - SI. 0 - NO. " << endl;
+            cin >> boton;
+            break;
+        case 4:
+            cout << "-------------------------------" << endl;
+            cout << "EQUIPO: UTN" << endl << endl;
+            cout << "INTEGRANTES: " << endl << endl;
+            cout << "SARMIENTO, FRANCO. LEGAJO: XXXXX. " << endl;
+            cout << "XXXXXXX. LEGAJO: XXXXXXX. " << endl;
+            cout << "XXXXXXX. LEGAJO: XXXXXX. " << endl << endl;
+            cout << "-------------------------------" << endl;
+            cout << "DESEA VOLVER AL MENU PRINCIPAL? " << endl << "1 - SI. 0 - NO. " << endl;
+            cin >> boton;
+            break;
+        default:
+            break;
+        }
+    }
+    while (boton!=0);
+
+
+}
